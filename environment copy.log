@@ -1,0 +1,11 @@
+ProductName:            macOS
+ProductVersion:         13.1
+BuildVersion:           22C65
+
+Python 3.10.10
+
+certifi==2023.7.22
+charset-normalizer==3.2.0
+idna==3.4
+requests==2.31.0
+urllib3==2.0.4
