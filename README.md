@@ -27,12 +27,11 @@ This project mainly analyzed the rice dataset from the UCI archive with the enti
   
 3. Finally, you could reproduce the analysis that is mentioned above by running the **analysis.py**
    - This will produce an accuracy score in terms of classifying the rice species called **results.txt** in the results folder.
-   - This will also produce a confusion matrix heatmap on the testset data called condusion_matrix_testset.png in the results folder.
+   - This will also produce a confusion matrix heatmap on the testset data called **confusion_matrix_testset.png** in the results folder.
   
    
   <img width="568" alt="Screenshot 2023-12-03 at 00 31 02" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/771d6fa8-6b9b-4e79-badd-377b137e8a1f">
 
-  ____ worlflow pic needed here_____
 
 ## Reproducing 
 1. Check your environment/create a virtual environment
