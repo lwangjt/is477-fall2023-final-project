@@ -29,6 +29,9 @@ This project mainly analyzed the rice dataset from the UCI archive with the enti
    - This will produce an accuracy score in terms of classifying the rice species called **results.txt** in the results folder.
    - This will also produce a confusion matrix heatmap on the testset data called condusion_matrix_testset.png in the results folder.
   
+   
+  <img width="568" alt="Screenshot 2023-12-03 at 00 31 02" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/771d6fa8-6b9b-4e79-badd-377b137e8a1f">
+
   ____ worlflow pic needed here_____
 
 ## Reproducing 
@@ -69,6 +72,8 @@ You can reproduce the environment using the following information:
 ## References 
 
 Cinar, I., & Koklu, M. (2019). Classification of Rice Varieties Using Artificial Intelligence Methods. International Journal of Intelligent Systems and Applications in Engineering.
+
+Edotor — Your Favorite Online Graphviz Editor. (n.d.). https://edotor.net/
 
 Pedregosa, F., Varoquaux, Ga"el, Gramfort, A., Michel, V., Thirion, B., Grisel, O., … others. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12(Oct), 2825–2830.
  
