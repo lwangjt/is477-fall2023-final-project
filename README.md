@@ -28,29 +28,108 @@ This project mainly analyzed the rice dataset from the UCI archive with the enti
 3. Finally, you could reproduce the analysis that is mentioned above by running the **analysis.py**
    - This will produce an accuracy score in terms of classifying the rice species called **results.txt** in the results folder.
    - This will also produce a confusion matrix heatmap on the testset data called **confusion_matrix_testset.png** in the results folder.
-  
+
+This workflow is documented in the **Snakeile** in this repo to document the input and outputs.
+The picture below is the workflow visualization.
    
   <img width="568" alt="Screenshot 2023-12-03 at 00 31 02" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/771d6fa8-6b9b-4e79-badd-377b137e8a1f">
 
 
 ## Reproducing 
-1. Check your environment/create a virtual environment
-
+1. Check your environment/create a virtual environment and add packages
 You can reproduce the environment using the following information:
+  - Create a virtual environment on your computer after you download the files from this repository (>Create Environment in VS Code).
   - To add dependencies: download the requirement.txt file from this github repo main branch, then run
     ```
     pip install -r requirements.txt
     ```
-  - For more information about the environment that I used, please refer to the environment.log file on this repository.
-    - ProductName:macOS
-    - ProductVersion:13.1
-    - BuildVersion:22C65
-    - Python 3.10.10
-    - certifi==2023.7.22
-    - charset-normalizer==3.2.0
-    - idna==3.4
-    - requests==2.31.0
-    - urllib3==2.0.4
+  - For more information about the environment that I used, please refer to the **environment.log** file on this repository.
+ProductName:            macOS
+ProductVersion:         14.1.1
+BuildVersion:           23B81
+
+Python 3.10.13
+
+annotated-types==0.6.0
+appdirs==1.4.4
+attrs==23.1.0
+certifi==2023.11.17
+charset-normalizer==3.3.2
+ConfigArgParse==1.7
+connection-pool==0.0.3
+contourpy==1.2.0
+cycler==0.12.1
+dacite==1.8.1
+datrie==0.8.2
+docutils==0.20.1
+dpath==2.1.6
+fastjsonschema==2.19.0
+fonttools==4.46.0
+gitdb==4.0.11
+GitPython==3.1.40
+htmlmin==0.1.12
+humanfriendly==10.0
+idna==3.6
+ImageHash==4.3.1
+Jinja2==3.1.2
+joblib==1.3.2
+jsonschema==4.20.0
+jsonschema-specifications==2023.11.2
+jupyter_core==5.5.0
+kiwisolver==1.4.5
+llvmlite==0.41.1
+MarkupSafe==2.1.3
+matplotlib==3.7.3
+multimethod==1.10
+nbformat==5.9.2
+networkx==3.2.1
+numba==0.58.1
+numpy==1.25.2
+packaging==23.2
+pandas==2.0.3
+patsy==0.5.4
+phik==0.12.3
+Pillow==10.1.0
+plac==1.4.1
+platformdirs==4.0.0
+psutil==5.9.6
+PuLP==2.7.0
+pydantic==2.5.2
+pydantic_core==2.14.5
+pyparsing==3.1.1
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyWavelets==1.5.0
+PyYAML==6.0.1
+referencing==0.31.1
+requests==2.31.0
+reretry==0.11.8
+rpds-py==0.13.2
+scikit-learn==1.3.2
+scipy==1.11.4
+seaborn==0.12.2
+six==1.16.0
+smart-open==6.4.0
+smmap==5.0.1
+snakemake==7.32.4
+statsmodels==0.14.0
+stopit==1.1.2
+tabulate==0.9.0
+tangled-up-in-unicode==0.2.0
+threadpoolctl==3.2.0
+throttler==1.2.2
+toposort==1.10
+tqdm==4.66.1
+traitlets==5.14.0
+typeguard==4.1.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+visions==0.7.5
+wordcloud==1.9.2
+wrapt==1.16.0
+ydata-profiling==4.6.2
+yte==1.5.1
    
   - You can check your environment version the following on your terminal:
   ```
@@ -59,10 +138,20 @@ You can reproduce the environment using the following information:
   python –-version
   pip freeze
   ```
-2. Copy the repository to get the data and analysis mentioned above.
-3. Run the workflow that is mentioned above
-4. Check your results folder to see if the files match the results that are mentioned in the analysis section.
+2. Run the **prepare_data.py** file
+   - As mentioned above, you will first run the **prepare_data.py** to get the original data **rice+cammeo+and+osmancik.zip** and the csv file (modified by me) **Rice_Cammeo_Osmancik.csv**.
+   - This file will download the files into a **data** folder since these two files are not provided directly on this repository. The sentence "Zip/csv file has been downloaded successfully" as these files are downloaded correctly onto your computer.
+   - Moreover, the integrity will be checked by comparing the **sha256** for both files. If the hash matched with the corresponding file, "The computed hash for ___ matches the expected hash" will show up on the terminal. Otherwise, "The computed hash for ____ does not match the expected hash" will show up if the file failed to confirm its integrity.
 
+3. Run the **profiling.py** file
+    - As you already installed pandas and ydata-profiling, a **report.html** report will download into your ydata_profiling folder to make sure to search for this file on your computer and compare it with the html that it shows on this repo.
+
+4. Run the **analysis.py** file
+    - In this file, a logistic regression task will be performed on the csv file. As a result, it will produce a **confusion_matrix_testset.png** to examine the prediction accuracy. And a **results.txt** will include the summary statistics of the features as well as the accuracy score of the classification task.
+
+5. Compare all the outputs to the repo's files.
+   - You could compare the outputs from the files above in the **results** and the **profiling** folder in this repo.
+  
 ## License
 
 * The MIT license is applied here for the scripts because it's a free, permissive software license that allows users to run and use my code for any purpose. This license aligns with the purpose of this project well since I did not directly provide the data in this repository. This could allow people to visit and reproduce my analysis of the rice data at any time. 
