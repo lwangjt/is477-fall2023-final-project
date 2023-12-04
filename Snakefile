@@ -1,18 +1,25 @@
-rule prepare_data.py:
-  output:
-    "rice+cammeo+and+osmancik.zip",
-  shell:
-    "python lab6/step1.py"
-rule profile.py:
-  output:
-    "lab6/output3.txt"
-  shell:
-    "python lab6/step2.py"
-rule analyze.py:
-  input:
-    "lab6/output3.txt"
-  output:
-    "results/results.txt",
-    "results/confusion_matrix_testset.png"
-  shell:
-    "python lab6/step3.py"
+
+rule prepare:
+    output:
+        "rice+cammeo+and+osmancik.zip",
+        "Rice_Cammeo_Osmancik.csv"
+    shell:
+        "python prepare_data.py"
+
+
+rule profile:
+    input:
+        "Rice_Cammeo_Osmancik.csv"
+    output:
+        "report.html"
+    shell:
+        "python profile.py"
+
+rule analyze:
+    input:
+        "Rice_Cammeo_Osmancik.csv",
+    output:
+        "confusion_matrix_testset.png",
+        "results.txt"
+    shell:
+        "python analysis.py"
