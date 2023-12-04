@@ -157,7 +157,6 @@ yte==1.5.1
 ## License
 
 * The MIT license is applied here for the scripts because it's a free, permissive software license that allows users to run and use my code for any purpose. This license aligns with the purpose of this project well since I did not directly provide the data in this repository. This could allow people to visit and reproduce my analysis of the rice data at any time. 
-* I also applied the Creative Commons Attribution 4.0 International (CC BY 4.0) license for the modified data that I made for the CSV file since the original UCI rice data also applied this license so that make could share and make changes to the data as long as credit is given.
 
 ## References 
 
