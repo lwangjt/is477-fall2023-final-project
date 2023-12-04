@@ -29,7 +29,7 @@ This project mainly analyzed the rice dataset from the UCI archive with the enti
    - This will produce an accuracy score in terms of classifying the rice species called **results.txt** in the results folder.
    - This will also produce a confusion matrix heatmap on the testset data called **confusion_matrix_testset.png** in the results folder.
 
-This workflow is documented in the **Snakeile** in this repo to document the input and outputs.
+This workflow is documented in the **Snakefile** in this repo to document the input and outputs.
 The picture below is the workflow visualization.
    
   <img width="568" alt="Screenshot 2023-12-03 at 00 31 02" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/771d6fa8-6b9b-4e79-badd-377b137e8a1f">
