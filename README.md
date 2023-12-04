@@ -44,6 +44,7 @@ You can reproduce the environment using the following information:
     pip install -r requirements.txt
     ```
   - For more information about the environment that I used, please refer to the **environment.log** file on this repository.
+```
 ProductName:            macOS
 ProductVersion:         14.1.1
 BuildVersion:           23B81
@@ -130,6 +131,7 @@ wordcloud==1.9.2
 wrapt==1.16.0
 ydata-profiling==4.6.2
 yte==1.5.1
+```
    
   - You can check your environment version the following on your terminal:
   ```
