@@ -1,4 +1,5 @@
 # is477-fall2023-final-project
+[![DOI](https://zenodo.org/badge/723204699.svg)](https://zenodo.org/doi/10.5281/zenodo.10253435)
 
 ## Overview
 
