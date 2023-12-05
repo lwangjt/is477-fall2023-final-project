@@ -154,18 +154,20 @@ yte==1.5.1
                   requirements.txt **download from thie repo**
    
 3. Run the scripts
-   - Choice 1: Run it step by step **without snakemake**
+  - Choice 1: Run it step by step **without snakemake**
      1. Run the **prepare_data.py** file
+   
      - As mentioned above, you will first run the **prepare_data.py** to get the original data **rice+cammeo+and+osmancik.zip** and the csv file (modified by me) **Rice_Cammeo_Osmancik.csv**.
      - This file will download the files into a **data** folder since these two files are not provided directly on this repository. The sentence "Zip/csv file has been downloaded successfully" as these files are downloaded correctly onto your computer.
      - Moreover, the integrity will be checked by comparing the **sha256** for both files. If the hash matches with the corresponding file, "The computed hash for ___ matches the expected hash" will show up on the terminal. Otherwise, "The computed hash for ____ does not match the expected hash" will show up if the file fails to confirm its integrity.
 
     2. Run the **profiling.py** file
+   
     - As you already installed pandas and ydata-profiling, a **report.html** report will download into your **profiling** folder.
 
     3. Run the **analysis.py** file
     - In this file, a logistic regression task will be performed on the csv file. As a result, it will produce a **confusion_matrix_testset.png** to examine the prediction accuracy. And a **results.txt** will include the summary statistics of the features as well as the accuracy score of the classification task. These files will be stored in the **results** folder.
-
+      
   - Choice 2: Run **with snakemake**
     ```
     snakemake --cores 1 prepare
