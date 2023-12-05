@@ -143,17 +143,18 @@ yte==1.5.1
   ```
 
 2. Set up your directory like:
+```
     name_it_your_own/
                   data/
                   profiling/
                   results/
                   scripts/
-                        prepare_data.py **download from thie repo**
-                        profile.py **download from thie repo**
-                        analysis.py **download from thie repo**
-                  requirements.txt **download from thie repo**
-   
-3. Run the scripts
+                        prepare_data.py **download from this repo**
+                        profile.py **download from this repo**
+                        analysis.py **download from this repo**
+                  requirements.txt **download from this repo**
+```
+4. Run the scripts
   - Choice 1: Run it step by step **without snakemake**
      1. Run the **prepare_data.py** file
    
