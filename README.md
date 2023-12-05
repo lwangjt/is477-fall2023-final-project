@@ -141,18 +141,30 @@ yte==1.5.1
   python –-version
   pip freeze
   ```
-2. Run the **prepare_data.py** file
+
+2. Set up your directory like:
+    name_it_your_own/
+                  data/
+                  profiling/
+                  results/
+                  scripts/
+                        prepare_data.py **download from thie repo**
+                        profile.py **download from thie repo**
+                        analysis.py **download from thie repo**
+                  requirements.txt **download from thie repo**
+   
+3.. Run the **prepare_data.py** file
    - As mentioned above, you will first run the **prepare_data.py** to get the original data **rice+cammeo+and+osmancik.zip** and the csv file (modified by me) **Rice_Cammeo_Osmancik.csv**.
    - This file will download the files into a **data** folder since these two files are not provided directly on this repository. The sentence "Zip/csv file has been downloaded successfully" as these files are downloaded correctly onto your computer.
-   - Moreover, the integrity will be checked by comparing the **sha256** for both files. If the hash matched with the corresponding file, "The computed hash for ___ matches the expected hash" will show up on the terminal. Otherwise, "The computed hash for ____ does not match the expected hash" will show up if the file failed to confirm its integrity.
+   - Moreover, the integrity will be checked by comparing the **sha256** for both files. If the hash matches with the corresponding file, "The computed hash for ___ matches the expected hash" will show up on the terminal. Otherwise, "The computed hash for ____ does not match the expected hash" will show up if the file fails to confirm its integrity.
 
-3. Run the **profiling.py** file
-    - As you already installed pandas and ydata-profiling, a **report.html** report will download into your ydata_profiling folder to make sure to search for this file on your computer and compare it with the html that it shows on this repo.
+4.. Run the **profiling.py** file
+    - As you already installed pandas and ydata-profiling, a **report.html** report will download into your **profiling** folder.
 
-4. Run the **analysis.py** file
-    - In this file, a logistic regression task will be performed on the csv file. As a result, it will produce a **confusion_matrix_testset.png** to examine the prediction accuracy. And a **results.txt** will include the summary statistics of the features as well as the accuracy score of the classification task.
+5. Run the **analysis.py** file
+    - In this file, a logistic regression task will be performed on the csv file. As a result, it will produce a **confusion_matrix_testset.png** to examine the prediction accuracy. And a **results.txt** will include the summary statistics of the features as well as the accuracy score of the classification task. These files will be stored in the **results** folder.
 
-5. Compare all the outputs to the repo's files.
+6. Compare all the outputs to the repo's files.
    - You could compare the outputs from the files above in the **results** and the **profiling** folder in this repo.
   
 ## License
