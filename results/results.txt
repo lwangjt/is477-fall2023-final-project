@@ -1,4 +1,4 @@
-Accuracy: 0.937007874015748
+Accuracy: 0.9343832020997376
 
 Describe Statistics:
        Area Integer  Perimeter Real  Major_Axis_Length Real  Minor_Axis_Length Real  EccentricityReal  Convex_AreaInteger  Extent Real        Class

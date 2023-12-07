@@ -9,12 +9,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 print(os.getcwd())
-output_directory = "Desktop/ischool/is477-fall2023-final-project/results"
+output_directory = "results"
 output_file_path = os.path.join(output_directory, "results.txt")
 
 
 # read in data
-df = pd.read_csv('Desktop/ischool/is477-fall2023-final-project/data/Rice_Cammeo_Osmancik.csv') # only contains numerical data
+df = pd.read_csv('data/Rice_Cammeo_Osmancik.csv') # only contains numerical data
 df = df.dropna() # no na values as suggested in csv
 features = ["Area Integer", "Perimeter Real", "Major_Axis_Length Real", "Minor_Axis_Length Real", 
             "EccentricityReal", "Convex_AreaInteger", "Extent Real"]

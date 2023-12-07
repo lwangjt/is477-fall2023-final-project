@@ -1,18 +1,26 @@
 {
-    "Title": "is477-fall2023-final-project",
-    "Description": "UCI Rice Data Classification task with the entire workflow",
-    "Creators": [
-      {
-        "name": "Wang, Jingtong",
-        "ORCID": "0009-0006-0959-2817"} ],
-    "Access Right": "Open Access",
-    "License": "MIT License",
-    "Keywords": [
-      "Rice",
-      "Data Classification",
-      "Workflow"
-    ],
-    "Related Identifiers": [
-      {"DOI": " https://doi.org/10.24432/C5MW4Z"}],
-    "Upload type":"workflow"
-      }
+  "title": "is477-fall2023-final-project Rice Classification",
+  "description": "UCI Rice Data Classification task with the entire workflow",
+  "creators": [
+    {
+      "name": "Wang, Jingtong",
+      "orcid": "0009-0006-0959-2817"
+    }
+  ],
+    
+  "related identifiers": [
+    {
+    "scheme": "doi",
+    "identifider": "https://doi.org/10.24432/C5MW4Z",
+    "relation":"cites"
+    }
+  ],
+  "access right": "open",
+  "upload type":"software",
+  "license": "MIT",
+  "keywords": [
+    "Rice",
+    "Data Classification",
+    "Workflow"
+  ]
+}

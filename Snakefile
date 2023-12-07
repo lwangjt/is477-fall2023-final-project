@@ -1,25 +1,31 @@
 
 rule prepare:
     output:
-        "rice+cammeo+and+osmancik.zip",
-        "Rice_Cammeo_Osmancik.csv"
+        "data/rice+cammeo+and+osmancik.zip",
+        "data/Rice_Cammeo_Osmancik.csv"
     shell:
-        "python prepare_data.py"
+        "python scripts/prepare_data.py"
 
 
 rule profile:
     input:
-        "Rice_Cammeo_Osmancik.csv"
+        "data/Rice_Cammeo_Osmancik.csv"
     output:
-        "report.html"
+        "profiling/report.html"
     shell:
-        "python profile.py"
+        "python scripts/profile.py"
 
 rule analyze:
     input:
-        "Rice_Cammeo_Osmancik.csv",
+        "data/Rice_Cammeo_Osmancik.csv"
     output:
-        "confusion_matrix_testset.png",
-        "results.txt"
+        "results/confusion_matrix_testset.png",
+        "results/results.txt"
     shell:
-        "python analysis.py"
+        "python scripts/analysis.py"
+
+rule reproduce:
+    input:
+        "results/confusion_matrix_testset.png",
+        "results/results.txt",
+        "profiling/report.html"

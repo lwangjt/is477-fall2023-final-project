@@ -6,4 +6,4 @@ df = pd.read_csv("data/Rice_Cammeo_Osmancik.csv")
 # Create a profile report
 profile = ProfileReport(df, title="Pandas Profiling Report")
 
-profile.to_file("report.html")
+profile.to_file("profiling/report.html")
