@@ -171,6 +171,7 @@ yte==1.5.1
     - In this file, a logistic regression task will be performed on the csv file. As a result, it will produce a **confusion_matrix_testset.png** to examine the prediction accuracy. And a **results.txt** will include the summary statistics of the features as well as the accuracy score of the classification task. These files will be stored in the **results** folder.
       
   - Choice 2: Run **with snakemake**
+    Step by step:
     ```
     snakemake --cores 1 prepare
     ```
@@ -180,6 +181,17 @@ yte==1.5.1
     ```
     snakemake --cores 1 analyze
     ```
+
+    Or all at one time:
+    ```
+    snakemake --cores 1 reproduce
+    ```
+
+    To clean:
+    ```
+    snakemake --cores 1 reproduce --delete-all-output
+    ```
+    
 4. Compare all the outputs to the repo's files.
    - You could compare the outputs from the files above in the **results** and the **profiling** folder in this repo.
   
