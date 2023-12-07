@@ -33,7 +33,8 @@ This project mainly analyzed the rice dataset from the UCI archive with the enti
 This workflow is documented in the **Snakefile** in this repo to document the input and outputs.
 The picture below is the workflow visualization.
    
-  <img width="568" alt="Screenshot 2023-12-03 at 00 31 02" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/771d6fa8-6b9b-4e79-badd-377b137e8a1f">
+<img width="512" alt="Screenshot 2023-12-07 at 12 03 21" src="https://github.com/lwangjt/is477-fall2023-final-project/assets/112108984/e3dd4da3-6875-4d01-99ca-c992f5a7c70a">
+
 
 
 ## Reproducing 
